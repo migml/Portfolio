@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, Router, Switch } from 'react-router'
-import A from './a';
-import B from './b';
+import About from './about';
+import Home from './home';
 
 export const Rutas = () => {
     return <Router>
-        
-            <Route  path='/a' component={A} />
-            <Route  path='/b' component={B} />
-       
+        <Route path='/' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/home' component={Home} />
+
     </Router>
 };
