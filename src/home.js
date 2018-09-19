@@ -1,8 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
-export default class B extends React.Component {
+export default class Home extends React.Component {
     render() {
-        return <p>HOME!<NavLink to="/a">A</NavLink></p>;
+        return <h3><br/><br/><br/><br/>Home</h3>;
     }
 }
