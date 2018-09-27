@@ -3,7 +3,7 @@ import { Formik, Form, Field } from 'formik';
 
 export default class Contact extends React.Component {
     render() {
-        return <div><h1>Test</h1>
+        return <div><br/><br/><h1>CONTACT</h1>
             <Formik
                 initialValues={{ email: '', password: '' }}
                 validate={values => {
@@ -26,11 +26,26 @@ export default class Contact extends React.Component {
             >
                 {({ errors, touched, isSubmitting }) => (
                     <Form>
-                        <Field type="email" name="email" />
-                        {errors.email && touched.email && errors.email}
-                        <Field type="password" name="password" />
-                        {errors.password && touched.password && errors.password}
-                        <button type="submit" disabled={isSubmitting}>Send</button>
+                        <div className="form-group row">
+                            <label htmlFor="example-text-input" className="col-2 col-form-label">Text</label>
+                            <div className="col-10">
+                                <Field type="email" name="email" className="form-control" />
+                                {errors.email && touched.email && errors.email}
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <label htmlFor="example-text-input" className="col-2 col-form-label">Text</label>
+                            <div className="col-10">
+                                <Field type="password" name="password" className="form-control" />
+                                {errors.password && touched.password && errors.password}
+                            </div>
+                        </div>
+                        <div className="form-group row">
+                            <div className="offset-sm-2 col-sm-10">
+                                <button type="submit" disabled={isSubmitting} className="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+
                     </Form>
                 )}
             </Formik>

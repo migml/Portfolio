@@ -34,7 +34,7 @@ export class Layout extends React.Component {
       </div>
       <footer className="footer">
         <div className="container">
-          <span className="text-muted">2018</span>
+          <span className="text-muted">Miguel Martín - 2018</span>
         </div>
       </footer></div>
       ;

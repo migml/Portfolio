@@ -1,5 +1,6 @@
 body{
-    padding-top: 50px;
+    padding-top: 70px;
+    background-color: #f8f9fa!important;
 }
 .versus{
     position: absolute;
@@ -18,22 +19,10 @@ body{
     width: 78px;
     z-index: 4;
  }
- .divided {
-    position: relative;
-    background: #f7f8f9;
-}
-.divided::after {
-    background: linear-gradient(#f0f7fd 0, #813FD9 50%, #f0f7fd 100%);
-    width: 1px;
-    top: 100px;
-    bottom: 100px;
-    left: 50%;
-    height: auto;
-    right: auto;
-    position: absolute;
-}
+
 .footer {
-    position: absolute;
+    position: fixed;
+    text-align: center;
     bottom: 0;
     width: 100%;
     padding-top: 5px 0px;
